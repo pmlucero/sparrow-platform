@@ -1,10 +1,12 @@
-package ar.com.zumma.sparrow.services;
+package ar.com.zumma.sparrowplatform.services;
+
+import java.util.Optional;
 
 public interface RepoServices<T, String> {
 
     public T save(T object);
 
-    public T findById(String id);
+    public Optional<T> findById(String id);
 
     public void delete(T object);
 

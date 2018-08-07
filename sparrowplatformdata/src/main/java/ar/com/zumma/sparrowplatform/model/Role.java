@@ -1,4 +1,4 @@
-package ar.com.zumma.sparrow.model;
+package ar.com.zumma.sparrowplatform.model;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

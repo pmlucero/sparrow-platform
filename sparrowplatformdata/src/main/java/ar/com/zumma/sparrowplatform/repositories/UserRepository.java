@@ -1,6 +1,6 @@
-package ar.com.zumma.sparrow.repositories;
+package ar.com.zumma.sparrowplatform.repositories;
 
-import ar.com.zumma.sparrow.model.User;
+import ar.com.zumma.sparrowplatform.model.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
