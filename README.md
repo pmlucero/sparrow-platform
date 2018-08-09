@@ -1,4 +1,8 @@
 # sparrow-platform
 Sparrow Platform
 
-https://circleci.com/gh/:owner/:repo.png?circle-token=:circle-token
+| Linux | 
+| :---- | 
+[ ![Linux build status][1]] 
+
+[1]: https://circleci.com/gh/pmlucero/sparrow-platform
