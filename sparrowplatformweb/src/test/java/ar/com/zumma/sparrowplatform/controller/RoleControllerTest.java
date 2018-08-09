@@ -46,7 +46,7 @@ public class RoleControllerTest {
 
         mockMvc.perform(get("/roles"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("vRoles"));
+                .andExpect(view().name("roles"));
     }
 
     @Before

@@ -25,6 +25,6 @@ public class RoleController {
     public String getRolePage(Model model) {
         log.debug("Getting role page");
         model.addAttribute("roles", roleService.findAll());
-        return "vRoles";
+        return "roles";
     }
 }
