@@ -9,10 +9,6 @@ jobs:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
 
-    dependencies:
-      override:
-        - mvn install
-
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -34,7 +30,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: mvn dependency:go-offline
+      - run: mvn install dependency:go-offline
 
       - save_cache:
           paths:
