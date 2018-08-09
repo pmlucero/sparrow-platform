@@ -16,8 +16,8 @@ import java.util.Optional;
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
-@DataMongoTest
+//@SpringBootTest
+//@DataMongoTest
 public class RoleRepositoryTest {
 
     @Autowired
@@ -27,8 +27,9 @@ public class RoleRepositoryTest {
     public void setUp() throws Exception {
     }
 
-    @Ignore
+
     @Test
+    @Ignore
     public void findByName() throws Exception {
         Optional<Role> o = repo.findByName("ADMIN");
 
