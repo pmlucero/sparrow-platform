@@ -23,6 +23,10 @@ jobs:
     steps:
       - checkout
 
+        dependencies:
+         override:
+          - mvn install
+
       # Download and cache dependencies
       - restore_cache:
           keys:
