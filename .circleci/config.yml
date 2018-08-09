@@ -40,3 +40,7 @@ jobs:
       # run tests!
       - run: mvn integration-test
 
+general:
+  branches:
+    only:
+     - develop
