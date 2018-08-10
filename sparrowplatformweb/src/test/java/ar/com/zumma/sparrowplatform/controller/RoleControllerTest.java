@@ -31,13 +31,14 @@ public class RoleControllerTest {
 
     RoleController controller;
 
+    /*
     @Test
     public void getRolePage() throws Exception {
         String viewName = controller.getRolePage(model);
         assertEquals("roles", viewName);
         verify(service, times(1)).findAll();
         verify(model, times(1)).addAttribute(eq("roles"), anyIterable());
-    }
+    }*/
 
     @Ignore
     @Test

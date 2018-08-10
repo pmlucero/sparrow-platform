@@ -7,9 +7,7 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import java.util.HashSet;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.times;
@@ -72,7 +70,7 @@ public class RoleServiceImplTest {
     @Test
     public void findAll() throws Exception {
         Role r = new Role();
-        HashSet<Role> roles = new HashSet<>();
+        List<Role> roles = new ArrayList<>();
         roles.add(r);
 
         when(roleService.findAll()).thenReturn(roles);

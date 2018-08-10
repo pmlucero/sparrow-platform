@@ -5,7 +5,9 @@ import ar.com.zumma.sparrowplatform.repositories.UserRepository;
 import ar.com.zumma.sparrowplatform.services.UserService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -32,8 +34,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Iterable<User> findAll() {
-        return repo.findAll();
+    public List<User> findAll() {
+        return (List<User>) repo.findAll();
     }
 
     @Override

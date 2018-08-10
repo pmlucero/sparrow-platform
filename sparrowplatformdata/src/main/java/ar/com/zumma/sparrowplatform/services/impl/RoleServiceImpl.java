@@ -5,7 +5,9 @@ import ar.com.zumma.sparrowplatform.repositories.RoleRepository;
 import ar.com.zumma.sparrowplatform.services.RoleService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 public class RoleServiceImpl implements RoleService {
@@ -32,8 +34,8 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
-    public Iterable<Role> findAll() {
-        return repo.findAll();
+    public List<Role> findAll() {
+        return (List<Role>) repo.findAll();
     }
 
     @Override

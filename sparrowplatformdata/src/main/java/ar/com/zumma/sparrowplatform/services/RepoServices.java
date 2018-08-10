@@ -1,5 +1,6 @@
 package ar.com.zumma.sparrowplatform.services;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface RepoServices<T, String> {
@@ -10,5 +11,5 @@ public interface RepoServices<T, String> {
 
     public void delete(T object);
 
-    public Iterable<T> findAll();
+    public List<T> findAll();
 }

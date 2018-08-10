@@ -20,11 +20,9 @@ public class RoleController {
         this.roleService = roleService;
     }
 
-    @RequestMapping(value="/roles", method = RequestMethod.GET)
-    @ResponseBody
-    public String getRolePage(Model model) {
-        log.debug("Getting role page");
+    @RequestMapping({"/roles","/roles/index", "/roles/index.html"})
+    public String listOf(Model model) {
         model.addAttribute("roles", roleService.findAll());
-        return "roles";
+        return "roles/index";
     }
 }
