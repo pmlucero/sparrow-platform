@@ -75,7 +75,7 @@ public class RoleServiceImplTest {
 
         when(roleService.findAll()).thenReturn(roles);
 
-        Set<Role> result = (Set<Role>) roleService.findAll();
+        List<Role> result = roleService.findAll();
 
         assertEquals(result.size() , 1);
         verify(roleRepository, times(1)).findAll();

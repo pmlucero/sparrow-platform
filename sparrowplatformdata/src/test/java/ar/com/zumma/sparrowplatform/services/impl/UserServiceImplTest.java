@@ -77,7 +77,7 @@ public class UserServiceImplTest {
 
         when(service.findAll()).thenReturn(users);
 
-        Set<User> result = (Set<User>) service.findAll();
+        List<User> result =  service.findAll();
 
         assertEquals(result.size() , 1);
         verify(repository, times(1)).findAll();
