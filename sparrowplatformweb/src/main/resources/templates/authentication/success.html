@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'authentication/success')}">
+
+<body>
+<h3>
+    <div class="label label-info">
+        Welcome, <span th:text="${name}">user</span>!
+    </div>
+</h3>
+</body>
+
+</html>

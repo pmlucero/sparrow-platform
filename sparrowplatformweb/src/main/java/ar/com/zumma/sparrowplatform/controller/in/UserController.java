@@ -1,11 +1,10 @@
-package ar.com.zumma.sparrowplatform.controller;
+package ar.com.zumma.sparrowplatform.controller.in;
 
 import ar.com.zumma.sparrowplatform.services.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("/users")
 @Controller
 public class UserController {
 
@@ -15,7 +14,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping({"","/index", "/index.html"})
+    @RequestMapping({"/users","/users/index", "/users/index.html"})
     public String listOf(Model model) {
         model.addAttribute("users", userService.findAll());
         return "users/index";

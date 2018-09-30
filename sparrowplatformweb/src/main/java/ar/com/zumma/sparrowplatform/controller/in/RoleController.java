@@ -1,14 +1,10 @@
-package ar.com.zumma.sparrowplatform.controller;
+package ar.com.zumma.sparrowplatform.controller.in;
 
 import ar.com.zumma.sparrowplatform.services.RoleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Slf4j
 @Controller

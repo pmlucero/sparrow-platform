@@ -9,4 +9,5 @@ public class SparrowPlatformApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SparrowPlatformApplication.class, args);
 	}
+
 }
